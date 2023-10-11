@@ -3,6 +3,8 @@
 
 This folder contains the relevant code files for simulation of an adaptive MPC controller for autonomous vehicle path tracking. The simulation is carried out using Simulink, and you will need the version of Simulink supplied with MATLAB R2023b in order to run the files.
 
+Certain function blocks pertaining to the simulation have been adapted from the [MATLAB Central File Exchange](https://www.mathworks.com/matlabcentral/fileexchange/68939-adaptive-mpc-design-with-simulink), namely the vehicle dynamics computation functionality offered by the `Meldas_library.slx` file.
+
 In order to run the simulation, kindly follow these steps:
 * Double-click `adaptive_mpc_controller.slx` to load the model and workspace. Do NOT run the simulation at this stage.
 * Double-click `Params.mat` to load relevant parameters.
