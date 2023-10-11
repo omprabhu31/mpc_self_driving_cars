@@ -1,0 +1,51 @@
+\documentclass[letterpaper,12pt]{article}
+% use packages
+% \usepackage{tabularx} 
+\usepackage{amsmath}  
+\usepackage{graphicx} 
+\usepackage[margin=1in,letterpaper]{geometry} 
+\usepackage{cite} 
+\usepackage[final]{hyperref}
+\hypersetup{
+    colorlinks=true,      
+    linkcolor=blue,        
+    citecolor=blue,        
+    filecolor=magenta,    
+    urlcolor=blue         
+}
+\usepackage{blindtext}
+% \usepackage{tabu}
+\usepackage[divipsnames]{xcolor}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{pdfpages}
+
+
+\begin{document}
+
+%title
+\include{Title/title.tex}
+
+% \pagestyle{fancy}
+% \fancyhf{}
+% \fancyhead[LE,RO]{\leftmark}
+% \fancyhead[RE,LO]{ME 6112}
+% \fancyfoot[CE,CO]{\leftmark}
+% \fancyfoot[LE,RO]{\thepage}
+
+\clearpage
+\tableofcontents
+\newpage
+\listoffigures
+\clearpage
+
+\include{Sections/Introduction.tex}
+\include{Sections/Literature.tex}
+\include{Sections/Theory.tex}
+\include{Progress}
+\include{Sections/Future.tex}
+\include{Sections/Outcomes.tex}
+% \include{Sections/Conclusion.tex}
+\end{document}
+
