@@ -1,0 +1,45 @@
+\chapter{Introduction}
+\section{Background of the Project}
+\paragraph{}
+Model predictive control (MPC) is an optimal control technique in which the calculated control actions minimize a cost function for a constrained dynamic system over a finite time horizon. It has seen major applications in the process control industry, with a major application lying in advanced process control of industrial applications such as oil refineries, kilns and boiler plants. In recent years, it has also been extensively employed in power system balancing models and in power electronics.
+
+\paragraph{}
+MPC controllers predict changes in the dependant variables of a system caused by changes in the independent variables. In most target applications, the autonomous vehicle industry alike, independent variables are often either the setpoints of PID controllers (e.g., acceleration, angular velocity) or the final control element (e.g., steering wheel, throttle/brake system). It is often a computation hassle to adjust the parameters for individual PID controllers at every time step of the process. MPC eliminates this by allowing us to model the entire control system as a single optimization problem and solve it for each finite time horizon.
+
+\paragraph{}
+While most processes are not real in the larger perspective, they can be approximately linearized over a small operating range. This allows for reduced time complexity, by reducing the time horizon of the optimization algorithm, and allows for use of the superposition principle of linear algebra. This enables the effect of changes in multiple independent variables to be added together for computation of the output response, simplifying the control problem to a series of direct algebraic manipulations that are fast and robust.
+
+\section{Motivation for the Project}
+\paragraph{}
+Recent trends have witnessed a paradigm shift in the automotive industry, with a significant rise in investments on research regarding autonomous state estimation, prediction and path tracking of vehicles. The current methodology for autonomous driving control involves an explicit segregation of the driving task into lateral and longitudinal control. Lateral control systems, the most common example being adaptive cruise control, focus exclusively on the forward and backward motion of the vehicle (controlled mainly by the throttle and brake system). Longitudinal control deals with the control of steering angles for sideways motion.
+
+\paragraph{}
+The currently accepted control methodology for lateral control is using PID controllers, which calculate the throttle/brake response from an error calculation (most often based on the reference velocity. There are several methods that may be employed for longitudinal control, particularly the pure pursuit control (PPC) method and the Stanley controller. PPC involves the use of the distance between the vehicle's current position from a specific look-ahead point to adjust the controller gain, while the Stanley controller employs use of the heading and cross-track errors to determine the steering output.
+
+\paragraph{}
+In this type of segregated control system, there is almost no interaction between the lateral and longitudinal controller. This can pose severe safety risks. For example, while executing a roundabout maneuver, the vehicle's lateral controller does not always reduce the vehicle velocity before the steering wheel is turned by the longitudinal control system. Additonally, the use of multiple PID controllers can often result in computational difficulties.
+
+\paragraph{}
+The use of MPC allows both the control systems to be integrated into a single optimization problem, with the lateral control system being modeled as a set of constraints on the vehicle's lateral acceleration and velocity. The MPC algorithm can also handle non-linear systems like tire force models, allowing for accurate trajectory tracking. Finally, with some additional processing, MPC can also integrate input from the vehicle's image sensors (cameras, LIDAR and SONAR sensors) to dynamically compute obstacle constraints within the environment of the optimization problem itself. These potential benefits offer compelling reasons for the exploration for MPC as a control system for path tracking of autonomous vehicles.
+
+\section{Report Outline}
+\noindent The report structure is as follows:
+\vspace{2.5mm}
+
+\noindent \textbf{Chapter 1:} This chapter includes a brief introduction to the topic and includes the motivation for the project as well as objective for the research work.
+\vspace{2.5mm}
+
+\noindent \textbf{Chapter 2:} This chapter introduces some important theory that is used to carry out transformations from controller outputs to the dynamic states of a vehicle. This is not explicitly included as part of the code supplied with the simulations discussed in Chapter 4, but is included in the relevant function blocks.
+\vspace{2.5mm}
+
+\noindent \textbf{Chapter 3:} This chapter gives a brief literature review of previous works in MPC for autonomous vehicle path tracking, including their results, performance and limitations wherever applicable.
+\vspace{2.5mm}
+
+\noindent \textbf{Chapter 4:} This chapter discusses the current work done as part of the project, including exploration of and some adjustments to implementations of existing simulations, as well as an original model for vehicle path tracking.
+\vspace{2.5mm}
+
+\noindent \textbf{Chapter 5:} This chapter outlines the future scope and possibilities for the project.
+\vspace{2.5mm}
+
+\noindent \textbf{Chapter 6:} This chapter lists all the reference materials used so far during the project.
+

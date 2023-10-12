@@ -1,0 +1,19 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Time Domain OCT system \cite {tomlins2005theory}}}{4}{}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Frequency Domain OCT system \cite {tomlins2005theory}}}{5}{}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces ThorImage software \cite {thorimage2023}}}{6}{}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces The flow diagram of the SDOCT data processing steps \cite {lin2019thesis}}}{7}{}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces The flow chart of the processing steps of the SDOCT spectrometer data \cite {lin2019thesis}}}{8}{}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Tone burst signal for single frequency in time domain}}{11}{}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces frequency sweep signal}}{13}{}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Validation Experimental Setup}}{16}{}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces View of the sample for the experiment}}{17}{}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Scan pattern specified in ThorImage software}}{17}{}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Obtained OCT image using ThorImage software}}{17}{}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Intensity data obained using SDK}}{17}{}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Post processed OCT image from data obtained using SDK}}{18}{}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces .oct file obtained using SDK opened in ThorImage}}{18}{}%
+\addvspace {10\p@ }
